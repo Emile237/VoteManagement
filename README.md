@@ -45,7 +45,7 @@ CREATE TABLE [dbo].[poste] (
 );
 ```
 
-+Modifier la chaine de connexion dans `appsettings.json` en remplacant 
++ Modifier la chaine de connexion dans `appsettings.json` en remplacant 
 ```
 Server=<votre chaine>;Database=Vote;Trusted_Connection=True;MultipleActiveResultSets=true"
   ```
