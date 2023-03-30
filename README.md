@@ -51,7 +51,7 @@ Server=<votre chaine>;Database=Vote;Trusted_Connection=True;MultipleActiveResult
   ```
   
 # Execution
-A partir du repertoire principal vous aurez le fichier 'VoteV2.sln'
+A partir du repertoire principal vous aurez le fichier `VoteV2.sln`
 # À implémenter...
 
 Avec du temps on ajouteras à notre application 
