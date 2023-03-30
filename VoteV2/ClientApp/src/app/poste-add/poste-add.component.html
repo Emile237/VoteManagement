@@ -1,0 +1,9 @@
+
+<div class="row justify-content-md-center">
+  <div class="col-5">
+    <h4 id="tableLabel"> Add Poste</h4>
+    <label>Appelation:</label><input type="text" class="form-control" [(ngModel)]="poste.Appelation" />
+    <label>Description:</label><input type="text" class="form-control" [(ngModel)]="poste.Description" />
+    <input class="btn btn-primary mb-3" type="submit" (click)="addPoste()" value="save" />
+  </div>
+</div>

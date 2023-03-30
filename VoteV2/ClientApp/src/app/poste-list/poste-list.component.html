@@ -1,0 +1,26 @@
+<h1>Poste</h1>
+<p *ngIf="!postes"><em>Loading...</em></p>
+<app-poste-add *ngIf="idPoste==0"></app-poste-add>
+<app-poste-update></app-poste-update>
+
+<table *ngIf="postes" class="table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Appelation</th>
+      <th>Description</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let poste of postes">
+      <td>{{ poste.idposte }}</td>
+      <td>{{ poste.appelation }}</td>
+      <td>{{ poste.description }}</td>
+      <td>
+        <button type="button" (click)="deletePoste(poste.idposte)" class="btn btn-danger">Delete</button>&nbsp;
+        <button type="button" (click)="updatePoste(poste.idposte)" class="btn btn-secondary">Edit</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

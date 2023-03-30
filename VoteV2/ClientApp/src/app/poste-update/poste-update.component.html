@@ -1,0 +1,10 @@
+<div class="row justify-content-md-center">
+    <div class="col-5">
+  <div *ngIf="poste">
+      <h4 id="tableLabel"> Update Poste</h4>
+      <label>Appelation:</label><input type="text" class="form-control" [(ngModel)]="poste.appelation" />
+      <label>Description:</label><input type="text" class="form-control" [(ngModel)]="poste.description" />
+      <input class="btn btn-primary mb-3" type="submit" (click)="save()" value="Update" />
+    </div>
+  </div>
+ </div>

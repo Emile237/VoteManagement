@@ -1,0 +1,13 @@
+
+<div class="row justify-content-md-center">
+  <div class="col-5">
+    <div *ngIf="candidat">
+      <h4 id="tableLabel"> Update Candidat</h4>
+      <label>Nom:</label><input type="text" class="form-control" [(ngModel)]="candidat.nom" />
+      <label>Prenom:</label><input type="text" class="form-control" [(ngModel)]="candidat.prenom" />
+      <label>Description:</label><input type="text" class="form-control" [(ngModel)]="candidat.description" />
+
+      <input class="btn btn-primary mb-3" type="submit" (click)="save()" value="Update" />
+    </div>
+  </div>
+  </div>

@@ -1,0 +1,17 @@
+
+<div class="row justify-content-md-center">
+  <div class="col-5">
+    <h4 id="tableLabel"> Add Candidature</h4>
+    <label>Nom candidat:</label>
+    <select class="form-select" [(ngModel)]="candidature.idCandidat">
+      <option value="" selected>choisir</option>
+      <option *ngFor="let candidat of candidats" value="{{ candidat.idCandidat }}">{{ candidat.nom }} </option>
+    </select>
+
+    <label>Poste:</label><select class="form-select" [(ngModel)]="candidature.idPoste">
+      <option value="" selected>choisir</option>
+      <option *ngFor="let poste of postes" value="{{ poste.idposte }}">{{ poste.appelation }} </option>
+    </select>
+    <input class="btn btn-primary mb-3" type="submit" (click)="addCandidature()" value="save candidature" />
+  </div>
+</div>

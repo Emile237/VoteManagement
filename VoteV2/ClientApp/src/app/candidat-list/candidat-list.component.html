@@ -1,0 +1,29 @@
+<h1>Candidats</h1>
+<p *ngIf="!candidats"><em>Loading...</em></p>
+<app-candidat-add *ngIf="idCandidat==0"></app-candidat-add>
+<app-candidat-update ></app-candidat-update>
+
+<table *ngIf="candidats" class="table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nom</th>
+      <th>Prenom</th>
+      <th>Description</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let candidat of candidats">
+      <td>{{ candidat.idCandidat }}</td>
+      <td>{{ candidat.nom }}</td>
+      <td>{{ candidat.prenom }}</td>
+      <td>{{ candidat.description }}</td>
+
+      <td>
+        <button type="button" (click)="deleteCandidat(candidat.idCandidat)" class="btn btn-danger">Delete</button>&nbsp;
+        <button type="button" (click)="updateCandidat(candidat.idCandidat)"  class="btn btn-secondary">Edit</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
