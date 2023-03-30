@@ -1,5 +1,5 @@
 # VoteV2
-
+    Cette application a pour but d'aider son gestionnaire à créer des postes ajouter des candidats et les associer à des candidatures.
 # configuration
 + Comme environnement de stockage de donnée il est nécessaire d'utiliser sqlSever.
 Pour faire fonctionner notre application il faut créer la base de donnée `vote` et ensuite executer le script suivant
@@ -49,6 +49,14 @@ CREATE TABLE [dbo].[poste] (
 ```
 Server=<votre chaine>;Database=Vote;Trusted_Connection=True;MultipleActiveResultSets=true"
   ```
+# À implémenter...
+
+Avec du temps on ajouteras à notre application 
++ un moyen de pouvoir authentifier chaque utilisateur pour garantir un accès sécurisé
++ La possibilité de définir le roles et la fonctionnalité `voter`
++ Et également ajouter une section de statistique pour connaitre le déroulement des votes en temps réels.
+
+
 
 
 
