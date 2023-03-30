@@ -1,5 +1,5 @@
 # VoteV2
-Cette application a pour but d'aider son gestionnaire à créer des postes ajouter des candidats et les associer à des candidatures.
+Cette application a pour but d'aider son gestionnaire à créer des postes, des candidats et les associer à des candidatures.
 # configuration
 + Comme environnement de stockage de donnée il est nécessaire d'utiliser sqlSever.
 Pour faire fonctionner notre application il faut créer la base de donnée `vote` et ensuite executer le script suivant
