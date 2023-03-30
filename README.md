@@ -1,8 +1,9 @@
 # VoteV2
 
 # configuration
-+ Comme environnement de stockage de donnée il est nécessaire d'utiliser mysqlSever.
++ Comme environnement de stockage de donnée il est nécessaire d'utiliser sqlSever.
 Pour faire fonctionner notre application il faut créer la table vote et ensuite executer le script suivant
+```
 USE [Vote]
 GO
 /****** Objet : Table [dbo].[candidature] Date du script : 3/30/2023 3:39:21 PM ******/
@@ -44,6 +45,7 @@ CREATE TABLE [dbo].[poste] (
     [Appelation]  VARCHAR (45) NULL,
     [Description] TEXT         NULL
 );
+```
 
 +Modifier la chaine de connexion dans `appsettings.json` en remplacant "Server=<votre chaine>;Database=Vote;Trusted_Connection=True;MultipleActiveResultSets=true"
   },
