@@ -2,7 +2,7 @@
 
 # configuration
 + Comme environnement de stockage de donnée il est nécessaire d'utiliser sqlSever.
-Pour faire fonctionner notre application il faut créer la table vote et ensuite executer le script suivant
+Pour faire fonctionner notre application il faut créer la base de donnée `vote` et ensuite executer le script suivant
 ```
 USE [Vote]
 GO
@@ -37,8 +37,6 @@ CREATE TABLE [dbo].[etudiant] (
     [Code]       VARCHAR (45) NOT NULL,
     PRIMARY KEY CLUSTERED ([IdEtudiant] ASC)
 );
-USE [Vote]
-GO
 
 CREATE TABLE [dbo].[poste] (
     [Idposte]     INT          IDENTITY (1, 1) NOT NULL,
@@ -50,7 +48,6 @@ CREATE TABLE [dbo].[poste] (
 +Modifier la chaine de connexion dans `appsettings.json` en remplacant 
 ```
 Server=<votre chaine>;Database=Vote;Trusted_Connection=True;MultipleActiveResultSets=true"
-
   ```
 
 
